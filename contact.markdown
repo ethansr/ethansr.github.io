@@ -2,6 +2,6 @@
 title: Contact
 ---
 
-Github: @ethansr
+Github:\ \ [\@ethansr](https://github.com/ethansr)
 
-Twitter: @mundoplano
+Twitter: [\@mundoplano](https://twitter.com/mundoplano)

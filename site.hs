@@ -21,6 +21,16 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
+    match ("projects/*") $ do
+        route   $ setExtension "html"
+        compile $ pandocBiblioCompiler
+            "csl/ieee-with-url.csl" "bib/research.bib"
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match "bib/*" $ compile biblioCompiler
+    match "csl/*" $ compile cslCompiler
+
     -- build up tags
     tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
@@ -40,7 +50,8 @@ main = hakyll $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocBiblioCompiler
+                  "csl/ieee-with-url.csl" "bib/research.bib"
             >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
             >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
             >>= relativizeUrls
