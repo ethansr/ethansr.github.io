@@ -68,8 +68,8 @@ main = hakyll $ do
         route $ setExtension "html"
         compile $ pandocBiblioCompiler
                   "csl/ieee-with-url.csl" "bib/research.bib"
-            >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
-            >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
+            >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags `mappend` categoryField "category" categories)
+            >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags `mappend` categoryField "category" categories)
             >>= relativizeUrls
 
 

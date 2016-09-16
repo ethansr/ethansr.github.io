@@ -40,3 +40,4 @@ Independently, as baysian approaches work their way into everyday life, conseque
 Perhaps the most satisfying is the thread of the debate between *extended logic* and *random variables*. Jaynes never misses an opportunity to excoriate those who genuflect themselves to the alter of randomness in the hope that it will make up for their lack of information.
 
 MUCH MORE COMING.
+<hr/>
