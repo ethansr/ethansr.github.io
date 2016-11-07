@@ -1,3 +1,7 @@
+---
+title: Dedalus: Datalog in Time and Space
+---
+
 There is an interesting [talk](https://www.youtube.com/watch?v=ggCffvKEJm) related to this paper[@alvaro-2009].
 
 This paper introduces the idea of creating a Datalog-derived language which allows specifying *when* a as well as what.
