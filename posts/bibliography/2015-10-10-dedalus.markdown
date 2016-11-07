@@ -1,5 +1,5 @@
 ---
-title: Dedalus: Datalog in Time and Space
+title: "Dedalus: Datalog in Time and Space"
 ---
 
 There is an interesting [talk](https://www.youtube.com/watch?v=ggCffvKEJm) related to this paper[@alvaro-2009].
