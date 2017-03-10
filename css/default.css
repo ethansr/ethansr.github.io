@@ -61,3 +61,7 @@ div.info {
 .banner {
     width: 100%;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
