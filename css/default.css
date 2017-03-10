@@ -35,7 +35,7 @@ div#footer {
     font-size: 15px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
-    text-align: right;
+
 
 }
 
@@ -65,3 +65,4 @@ div.info {
 .nowrap {
     white-space: nowrap;
 }
+
