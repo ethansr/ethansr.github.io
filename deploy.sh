@@ -3,6 +3,7 @@ git stash
 
 # Verify correct branch
 git checkout author
+git push origin author:auhtor
 
 # Build new files
 stack exec site clean
