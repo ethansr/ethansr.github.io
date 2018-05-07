@@ -23,6 +23,6 @@ git commit -m "Publish."
 git push origin master:master
 
 # Restoration
-git checkout develop
+git checkout author
 git branch -D master
 git stash pop
