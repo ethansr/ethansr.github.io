@@ -87,20 +87,12 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 
-    match "index.htm" $ do
+    match "index.md" $ do
         route $ setExtension "html"
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/**.markdown"
-            let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    field "taglist" (\_ -> renderTagList tags) `mappend`
-                    field "categorylist" (\_ -> renderTagList categories) `mappend`
-                    defaultContext
-
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+            pandocBiblioCompiler "csl/ieee-with-url.csl" "bib/research.bib"
+                >>= applyAsTemplate defaultContext
+                >>= loadAndApplyTemplate "templates/default.html" defaultContext
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler

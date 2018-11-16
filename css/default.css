@@ -1,3 +1,17 @@
 body {
-  font-family: "Fira Sans", monospace;
+    font-family: "Fira Sans", monospace;
+}
+
+.banner {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main {
+    font-size: 0.9rem;
 }
