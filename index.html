@@ -8,13 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Ethan Soutar-Rau</title>
+
 </head>
 
 <body>
 
     <img class="fit" src="img/side_cropped.png" alt="Ethan overlooking the Salish Sea, looking dithered">
-    <section>    <h1><a class="mono" href="">Ethan James Soutar-Rau</a></h1>
+
+    <section>
+        <h1><a class="mono" href="">Ethan James Soutar-Rau</a></h1>
     </section>
+
     <section>
         <p> I am graduate student working in the <a href="http://ivizlab.sfu.ca/">iViz Lab</a> at <a href="https://www.sfu.ca">Simon
                 Fraser University</a>.
@@ -31,10 +35,13 @@
 
         </p>
 
-        <p>In industry, I've done software engineering at <a href="https://www.gapintelligence.com/">gap intelligence</a>, sold computers for <a href="https://apple.com">Apple</a>, and interned at <a href="http://www.aeroinfo.com/">Boeing Aeroinfo</a>.</p>
+        <p>In industry, I've done software engineering at <a href="https://www.gapintelligence.com/">gap intelligence</a>,
+            sold computers for <a href="https://apple.com">Apple</a>, and interned at <a href="http://www.aeroinfo.com/">Boeing
+                Aeroinfo</a>.</p>
 
         <p></p>
     </section>
+
     <hr>
 
     <section>
@@ -58,7 +65,9 @@
             </li>
         </ol>
     </section>
+
     <hr>
+
     <section>
         <h2>Interactive Art Works</h2>
         <ol>
@@ -132,6 +141,14 @@
             </ol>
         </section>
     </section>
+    <script>
+        document.querySelectorAll(':not(h1) > a')
+            .forEach((node) => {
+                window.setTimeout(
+                    () => { node.classList.add('fancy'); },
+                    Math.random() * 150000)
+            });
+    </script>
 </body>
 
 </html>
