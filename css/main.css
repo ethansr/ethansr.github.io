@@ -55,6 +55,8 @@ li {
 .fit {
     width:100%;
     height: auto;
+    max-height: 30vh;
+    object-fit: cover;
 }
 
 @media (min-width: 28em) {
