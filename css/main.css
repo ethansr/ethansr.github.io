@@ -1,0 +1,79 @@
+ol {
+    list-style:none;
+}
+
+body {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 0.8rem;
+    margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 a:link, h1 a:visited {
+    color: black;
+}
+
+.mono {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+
+body > section {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h1 {
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.75rem;
+}
+
+.fit {
+    width:100%;
+    height: auto;
+}
+
+@media (min-width: 28em) {
+    h1 {
+        text-align: initial;
+        font-size: 2rem;
+        
+    }
+    body > section {
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+body {
+    font-size: 1rem;
+}
+}
