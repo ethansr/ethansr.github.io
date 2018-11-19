@@ -6,6 +6,7 @@ body {
     font-family: 'IBM Plex Serif', sans-serif;
     font-size: 0.8rem;
     margin: 0;
+    margin-top: 1rem;
 }
 
 h1,
@@ -14,6 +15,7 @@ h3,
 h4,
 h5,
 h6 {
+    margin-left: 0;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -45,8 +47,7 @@ a:hover {
 body > section,
 body > nav{
     max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -97,7 +98,8 @@ a.fancy {
         text-align: initial;
         font-size: 2rem;
     }
-    body>section {
+    body>section,
+    body>nav {
         max-width: 60rem;
         margin-left: auto;
         margin-right: auto;
