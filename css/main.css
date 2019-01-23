@@ -79,6 +79,10 @@ a.fancy {
     animation: link-fancy 300s ease infinite alternate;
 }
 
+a:hover.fancy {
+    animation: none;
+}
+
 
 @keyframes link-fancy {
     0%
